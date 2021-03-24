@@ -54,3 +54,15 @@ function createLeaf() {
         leaf.remove();
     }, 14000)
 };
+
+const nav = document.getElementById('nav');
+const i = document.querySelector('.i');
+console.log();
+
+if(window.innerWidth <= 1100){
+    toggle.addEventListener('click' , () =>{
+        nav.classList.toggle('show-nav');
+         i.classList.toggle("fa-bars");
+         i.classList.toggle("fa-times");
+    } );
+}
