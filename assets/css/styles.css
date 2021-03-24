@@ -15,6 +15,7 @@
 body {
   overflow: hidden;
   transition: 0.3s ease-in-out;
+  height: 100vh;
 }
 
 body.shownav {
@@ -299,7 +300,10 @@ nav ul li a:hover {
   align-items: center;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 376px) {
+  body {
+    overflow: hidden !important;
+  }
   .header .p-content h1 {
     font-size: 3rem;
   }
