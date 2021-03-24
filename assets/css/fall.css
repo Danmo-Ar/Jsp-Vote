@@ -1,0 +1,16 @@
+/* */
+
+.fa-envelope {
+    animation : fall linear forwards;
+    animation-delay: 1.5s;
+    color : #fbe6c2;
+    position : absolute;
+    top : -50px;
+
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
