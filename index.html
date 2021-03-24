@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/fall.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>JSP VOTE</title>
+</head>
+<body>
+    <hearder class="header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home <i class="fas fa-arrow-left wh"></i></a></li>
+                <li><a href=" #">President</a></li>
+                <li><a href="#">Tresorie</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+            </ul>
+        </nav>
+        <div class="toggle" >
+            <i class="fas fa-bars fa-3x"></i>
+        </div>
+        <div class="contnainer">
+            <div class="p-content">
+                <h1>Bienvenu Sur La Page de Vote JSP </h1>
+                <button class="btn" id="show">Participez <i class="fa fa-arrow-circle-right"></i></button>
+            </div>
+        </div>
+
+        <div class="modal" id = "modal">
+            <div class="modal-content">
+                <div class="inscription">
+                    <form action="#" methode="post" class="form form1">
+                        <span id="close" class="close"><i class="fas fa-times fa-2x "></i></span>
+                        <h2>Inscription</h2>
+                        <p>Inscrivez-Vous et Passez au vote</p>
+                        <div class="form-control">
+                            <label for="filere">Filière :</label>
+                            <select class="form-control" name="" id="">
+                                <option value="0">RGL</option>
+                                <option value = "1">CF</option>
+                                <option value = "2">MA</option>
+                            </select>
+                        </div>
+                        <div class="form-control">
+                            <label for="matricule">Matricule :</label>
+                            <input type ="text" name="matricule" id="matricule" placeholder="Entrez Votrez Matricule">
+                        </div>
+                        <div class="form-control">
+                            <label for="classe">Classe :</label>
+                            <input type ="text" name="classe" id="classe" placeholder="Entrez Votrez classe">
+                        </div>
+                        <button type="submit" class="btn yh">Valider</button>
+                        <p>Avez-vous un compte ?<a href="#" id="slide"> Connectez-Vous</a></p>
+                        </form>
+                </div>
+                <div class="connection">
+                    <form action="#" methode="post" class="form form2">
+                        <span id="close" class="close"><i class="fas fa-times fa-2x "></i></span>
+                        <h2>Connexion</h2>
+                    
+                        <div class="form-control">
+                            <label for="matricule">Matricule :</label>
+                            <input type="text" name="matricule" id="matricule" placeholder="Entrez Votrez Matricule">
+                        </div>
+                        <button type="submit" class="btn yh">Connexion</button>
+                        <a href="#" id="inverseslide"> S'inscrire</a></p>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+           
+    </hearder>
+    
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
